@@ -1,0 +1,16 @@
+.application-header{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.application-header-navbar{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.application-header-navbar-link:hover{
+  text-decoration: none !important;
+  color: #541eaa;
+}

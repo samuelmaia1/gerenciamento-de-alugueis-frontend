@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    align-items: start;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.container-info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-alugar{
+    background-color: #7137ce !important;
+    padding: .25rem;
+    width: 7rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: .25s;
+}
+
+.btn-alugar:hover{
+    background-color: #4d1aa0 !important;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-aluguel, .form-devolucao{
+    margin-left: 3rem;
+}
