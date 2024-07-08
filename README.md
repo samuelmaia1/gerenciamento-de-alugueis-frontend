@@ -1,4 +1,4 @@
-# Titulo
+# Título
 Gerenciamento de aluguéis (Front-end). (Em produção)
 
 ## Sobre o projeto
