@@ -13,14 +13,13 @@ function App() {
         <main className="main">
           <Header/>
           <div className='apresentation'>
-            <h1>Bem vindo ao gerenciador de Aluguéis!</h1>
-            <p>Selecione a opção desejada: </p>
+            <h1 className='apresentation-title'>A <span>solução perfeita</span> para sua organização!</h1>
             <div className="apresentation-options">
               <ChakraLink as={ReactRouterLink} className='apresentation-options-link' to='/materiais'>Materiais</ChakraLink>
-              <ChakraLink as={ReactRouterLink} className='apresentation-options-link'>Aluguéis</ChakraLink>
-              <ChakraLink as={ReactRouterLink} className='apresentation-options-link'>Aluguéis</ChakraLink>
+              {/* <ChakraLink as={ReactRouterLink} className='apresentation-options-link'>Login</ChakraLink> */}
             </div>
           </div>
+          
         </main>
         <footer className='application-footer'>
           Desenvolvido por Samuel Maia

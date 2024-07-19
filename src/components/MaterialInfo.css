@@ -6,25 +6,33 @@
 }
 
 .container-info{
-    
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+.container-info h1 {
+    font-size: 2rem;
+}
+
 .btn-alugar{
-    background-color: #7137ce !important;
+    background-color: var(--cor-button) !important;
+    color: #fff;
+    font-weight: 600;
     padding: .25rem;
     width: 7rem;
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: .25s;
 }
 
 .btn-alugar:hover{
-    background-color: #4d1aa0 !important;
+    text-decoration: none !important;
+    background-color: #0e1316 !important;
+    color: #fff !important;
+    border-color: var(--cor-button);
 }
 
 .container-input{
@@ -35,4 +43,9 @@
 
 .form-aluguel, .form-devolucao{
     margin-left: 3rem;
+}
+
+.container-buttons{
+    display: flex;
+    gap: .5rem;
 }

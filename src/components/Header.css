@@ -2,6 +2,8 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
+  font-family: var(--fonte-titulo);
+  font-weight: 500;
 }
 
 .application-header-navbar{
@@ -12,5 +14,5 @@
 
 .application-header-navbar-link:hover{
   text-decoration: none !important;
-  color: #541eaa;
+  color: var(--cor-button);
 }

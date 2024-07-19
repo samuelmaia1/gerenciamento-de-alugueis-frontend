@@ -1,10 +1,7 @@
 #root {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-}
-
-.application{
-  min-height: 100vh
+  background-color: var(--background-color);
+  min-height: 100vh;
 }
 
 .main{
@@ -14,6 +11,7 @@
 
 
 h1{
+  font-family: var(--fonte-titulo);
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -25,13 +23,18 @@ h1{
   margin-top: 2rem;
 }
 
-.apresentation h1{
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #1232A4 0%, #8D4CF9 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.apresentation p {
+  margin-top: 1.5rem;
+}
+
+.apresentation-title{ 
+    font-size: 3rem;
+    max-width: 35rem;
+    text-align: center;
+}
+
+.apresentation-title span{
+  color: var(--cor-button);
 }
 
 .apresentation-options{
@@ -41,19 +44,23 @@ h1{
 }
 
 .apresentation-options .apresentation-options-link{
-  background-color: #7137ce !important;
+  background-color: var(--cor-button) !important;
+  color: #fff;
+  font-weight: 600;
   padding: .25rem;
   width: 6rem;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: .5s;
 }
 
 .apresentation-options .apresentation-options-link:hover{
   text-decoration: none;
-  background-color: #4d1aa0 !important;
+  background-color: #0e1316 !important;
+  color: #fff;
+  border-color: var(--cor-button);
 }
 
 .application-footer{
@@ -63,7 +70,7 @@ h1{
   justify-content: center;
   width: 100%;
   background-color: #4158D0;
-  background-image: linear-gradient(43deg, #1232A4 0%, #8D4CF9 100%);
+  background-image: linear-gradient(43deg, var(--cor-button) 0%, #8D4CF9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

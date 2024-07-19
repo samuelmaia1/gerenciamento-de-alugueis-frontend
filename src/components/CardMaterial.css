@@ -1,5 +1,5 @@
 .card-material{
-    border: 2px solid #541eaa;
+    border: 2px solid var(--cor-button);
     width: 15rem;
     padding: 1rem;
     border-radius: 5px;
@@ -7,7 +7,7 @@
 }
 
 .card-material:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: var(--cor-button) 0px 5px 5px;
 }
 
 .card-material h3{

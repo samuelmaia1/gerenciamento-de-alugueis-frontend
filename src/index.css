@@ -1,4 +1,9 @@
 :root {
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #0e1316;
+  --cor-button: #508C9B;
+  --fonte-titulo: 'Raleway', sans-serif;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

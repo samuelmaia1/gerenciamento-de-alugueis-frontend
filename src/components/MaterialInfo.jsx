@@ -34,6 +34,7 @@ export function MaterialInfo({material, idMaterial}){
         if (material.estoque >= quantidade){
             alugar()
             alert('Alugado com sucesso!')
+            location.reload()
         } else {
             alert('Quantidade insuficiente no estoque.')
         }
@@ -55,6 +56,22 @@ export function MaterialInfo({material, idMaterial}){
             setDevolvendo(false)
         }
     }
+
+    const handleDeletar = (e) => {
+        async function deletar(){
+            await fetch(`http://localhost:3000/materiais/deletar/${idMaterial}`, {
+                method: 'DELETE'
+            })
+        }
+
+        const option = confirm('Tem certeza que deseja excluir este item?')
+
+        if (option){
+            deletar()
+            alert('Material deletado.')
+        }
+           
+    }
     return (
         <>
             <div className="container">
@@ -64,8 +81,11 @@ export function MaterialInfo({material, idMaterial}){
                     <p>Preço de reposição: R{material.preco_reposicao}</p>
                     <p>Tipo de material: {material.tipo}</p>
                     <p>Quantidade em estoque: {material.estoque}</p>
-                    <button className='btn-alugar' onClick={handleAlugar}>Alugar 🚀</button>
-                    <button className='btn-alugar' onClick={handleDevolver}>Devolver 📩</button>
+                    <div className="container-buttons">
+                        <button className='btn-alugar' onClick={handleAlugar}>Alugar 🚀</button>
+                        <button className='btn-alugar' onClick={handleDevolver}>Devolver 📩</button>
+                        <button className='btn-alugar' onClick={handleDeletar}>Deletar ❌</button>
+                    </div>
                 </div>
                 {
                     alugando?
@@ -74,7 +94,7 @@ export function MaterialInfo({material, idMaterial}){
                             <div className="container-input">
                                 <label htmlFor="quantidade">Informe quantas peças deseja alugar: </label>
                                 <Input variant='filled' placeholder='Digite a quantidade de peças:' className="input-form-chakra" name="quantidade" value={quantidade} onChange={handleQuantidade}/>
-                                <Button className="btn-submit-form-register" type="submit">Confirmar ✅</Button>
+                                <Button className="btn-alugar" type="submit">Confirmar</Button>
                             </div>
                         </form>
                         

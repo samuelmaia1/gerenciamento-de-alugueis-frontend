@@ -1,6 +1,6 @@
-.input-search{
-    border-color: #8D4CF9 !important;
-}
+/* .input-search{
+    border-color: var(--cor-button) !important;
+} */
 
 .form-search{
     display: flex;
@@ -15,11 +15,13 @@
     padding: 2rem;
     gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .form-search-new-material{
-    background-color: #7137ce !important;
-    color: white !important;
+    background-color: var(--cor-button) !important;
+    color: #fff !important;
+    font-weight: 600;
     border: 2px solid transparent;
     padding: .25rem;
     width: 6rem;
@@ -33,7 +35,9 @@
 
 .form-search-new-material:hover{
     text-decoration: none !important;
-    background-color: #4d1aa0 !important;
+    background-color: #0e1316 !important;
+    color: #fff !important;
+    border-color: var(--cor-button);
 }
 
 .form-search-container-input{
